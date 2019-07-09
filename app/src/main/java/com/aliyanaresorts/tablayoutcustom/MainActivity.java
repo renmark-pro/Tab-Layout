@@ -29,5 +29,16 @@ public class MainActivity extends AppCompatActivity {
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);
 
+        for (int i = 0 ; i<2 ; i++ ){
+            tabLayout.getTabAt(i).setIcon(tabIcons[i]);
+        }
+
     }
+
+    private int[] tabIcons = {
+            R.drawable.ic_android_black_24dp,
+            R.drawable.ic_assignment_return_black_24dp,
+            R.drawable.ic_android_black_24dp
+    };
+
 }
